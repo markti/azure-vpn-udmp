@@ -1,0 +1,4 @@
+local.sh
+terraform.tfstate*
+.terraform*
+.terraform/**
