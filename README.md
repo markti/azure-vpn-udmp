@@ -1,7 +1,7 @@
-# azure-vpn-udmp
-Connect a UniFi Dream Machine Pro to an Azure Virtual Network using S2S Connectivity
+# Overview
+This repository containers Terraform code that uses the `azurerm` provider to provision a Site-to-Site VPN connection with a Ubiquity Dream Machine Pro.
 
-Standard Azure Naming Conventions
+## Standard Azure Naming Conventions
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations
 
 ## Configuring Terraform
@@ -87,3 +87,6 @@ Finally we need to configure the following settings:
 - Perfect Forward Secrecy (PFS): Disabled
 - Dynamic Routing: Enabled
 
+## References
+
+ - https://www.starwindsoftware.com/blog/establish-a-site-to-site-vpn-between-azure-and-a-unifi-dream-machine-pro
