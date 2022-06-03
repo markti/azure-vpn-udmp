@@ -2,3 +2,4 @@ local.sh
 terraform.tfstate*
 .terraform*
 .terraform/**
+terraform.tfvars
