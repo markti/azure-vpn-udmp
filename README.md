@@ -1,5 +1,5 @@
 # Overview
-This repository containers Terraform code that uses the `azurerm` provider to provision a Site-to-Site VPN connection with a Ubiquity Dream Machine Pro.
+This repository contains Terraform code that uses the `azurerm` provider to provision a Site-to-Site VPN connection with a Ubiquity Dream Machine Pro.
 
 ## Standard Azure Naming Conventions
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations
