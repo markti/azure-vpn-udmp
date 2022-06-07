@@ -1,3 +1,6 @@
+variable "location" {
+  type = string
+}
 variable "local_ip_address" {
   type = string
 }

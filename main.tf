@@ -11,5 +11,5 @@ locals {
 
 resource "azurerm_resource_group" "main" {
   name     = "rg-vpn-${local.suffix}"
-  location = "East US 2"
+  location = var.location
 }
