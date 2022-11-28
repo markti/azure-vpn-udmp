@@ -10,3 +10,16 @@ variable "local_address_space" {
 variable "preshared_key" {
   type = string
 }
+variable "include_diagnostics" {
+  type    = bool
+  default = false
+}
+variable "log_analytics_workspace_name" {
+  type = string
+}
+variable "observability_resource_group" {
+  type = string
+}
+variable "admin_user_id" {
+  type = string
+}

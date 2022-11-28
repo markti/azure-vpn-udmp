@@ -1,15 +1,18 @@
+
 resource "azurerm_public_ip" "bastion" {
-  name                = "pip-bas-${local.suffix}"
-  location            = azurerm_resource_group.main.location
+  
+  name                = "pip-bastion-${local.suffix}"
   resource_group_name = azurerm_resource_group.main.name
+  location            = azurerm_resource_group.main.location
   allocation_method   = "Static"
   sku                 = "Standard"
+
 }
 
-resource "azurerm_bastion_host" "main" {
+resource "azurerm_bastion_host" "bastion" {
   name                = "bas-${local.suffix}"
-  location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
+  location            = azurerm_resource_group.main.location
 
   ip_configuration {
     name                 = "configuration"

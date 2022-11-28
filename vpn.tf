@@ -47,7 +47,7 @@ resource "azurerm_virtual_network_gateway_connection" "onpremise" {
 
   ipsec_policy {
 
-    dh_group         = "DHGroup2"
+    dh_group         = "DHGroup14"
     ike_encryption   = "AES256"
     ike_integrity    = "SHA1"
     ipsec_encryption = "AES256"

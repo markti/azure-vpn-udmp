@@ -6,10 +6,21 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.8.0"
     }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.2.0"
+    }
   }
 }
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-  features {}
+  features {
+    resource_group {
+      prevent_deletion_if_contains_resources = false
+    }
+    key_vault {
+      purge_soft_delete_on_destroy = true
+    }
+  }
 }
